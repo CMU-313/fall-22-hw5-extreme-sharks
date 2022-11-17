@@ -61,5 +61,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: badges
           force: true
+          
+      - name: PMD
+        uses: pmd/pmd-github-action@v1.3.0
+      
+
 
      
