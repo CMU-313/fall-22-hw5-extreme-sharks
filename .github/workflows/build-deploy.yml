@@ -100,8 +100,8 @@ jobs:
       - name: Run Mutation Testing
         run: mvn package -Ppitest org.pitest:pitest-maven:mutationCoverage
 
-- name: Deploy
-  uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.GITHUB_TOKEN }}
-    publish_dir: ./target/pit-reports/*/
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./target/pit-reports/*/
