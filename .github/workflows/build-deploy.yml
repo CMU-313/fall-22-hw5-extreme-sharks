@@ -64,3 +64,6 @@ jobs:
           
       - name: Run java checkstyle
         uses: nikitasavinov/checkstyle-action@0.6.0
+        
+      - name: PMD
+        uses: pmd/pmd-github-action@v1.3.0
